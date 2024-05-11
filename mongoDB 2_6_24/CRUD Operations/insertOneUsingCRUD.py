@@ -31,7 +31,7 @@ try:
     result = accounts_collection.insert_one(new_account)
 
     document_id = result.inserted_id
-    pprint(f"_id of inserted document: {document_id}")
+    pprint.pprint(f"_id of inserted document: {document_id}")
 
 
 except Exception as e:
